@@ -22,9 +22,7 @@ class WallHook(_WallMountedBox):
     def __init__(self) -> None:
         super().__init__()
 
-        # remove cli params you do not need
         self.buildArgParser(h=100)
-        # Add non default cli params if needed (see argparse std lib)
         self.argparser.add_argument(
             "--width",  action="store", type=float, default=10.0,
             help="width of the back panel")
@@ -40,28 +38,25 @@ class WallHook(_WallMountedBox):
         h = self.h
         hid = self.hook_inside_diameter
         ht = self.hook_thickness
-        total_length = hid + (ht * 2)
 
+        total_length = hid + (ht * 2)
         radius = hid / 2
         outside_radius = radius + ht
-        inside_hook_length = 0 #hc - ht - (radius * 2)
-
         bottom_length = total_length - outside_radius - t
 
-        tw = self.edges["b"].spacing() + hid + ht*2 + 20
+        tw = self.edges["b"].spacing() + total_length - 20
 
         if self.move(tw, h, move, True):
             return
 
-        self.moveTo(self.edges["b"].margin())
         self.polyline(
             self.edges["b"].startWidth() + bottom_length,
             (90, outside_radius),
             0,
-            (180, ht / 2), # U-turn with radius of half hook's thickness
+            (180, ht / 2), # U-turn with diameter of hook's thickness
             0,
             (-90, radius),
-            inside_hook_length,
+            0,
             (-90, radius),
             h - radius - ht - ht,
             (90, ht),
@@ -71,9 +66,7 @@ class WallHook(_WallMountedBox):
 
         self.edges["b"](h)
 
-        holes_x = (ht / 2)
-        holes_y = 10
-        self.fingerHolesAt(-holes_x, holes_y, total_length - outside_radius, 90)
+        self.fingerHolesAt(-(ht / 2), 10, total_length - outside_radius, 90)
         self.fingerHolesAt(-outside_radius - (ht / 2), total_length - (ht /2 ), ht, 0)
 
         self.move(tw, h, move)
@@ -83,6 +76,7 @@ class WallHook(_WallMountedBox):
 
         t = self.thickness
         h = self.h
+        w = self.width
         ht = self.hook_thickness
         hid = self.hook_inside_diameter
         total_length = hid + (ht * 2)
@@ -91,14 +85,15 @@ class WallHook(_WallMountedBox):
         outside_radius = radius + ht
 
         self.side(move="right")
-        self.side(move="right")
-        w = self.width
+        self.side(move="right mirror")
+
+        self.moveTo(self.edges["b"].spacing(), 0)
         self.flangedWall(w, h, flanges=[10, 2*t, 0, 2*t], edges="eeee",
                          r=2*t,
-                         callback=[lambda:(self.wallHolesAt(1.5*t, 0, h, 90), self.wallHolesAt(w+2.5*t, 0, h, 90))])
+                         callback=[lambda:(self.wallHolesAt(1.5*t, 0, h, 90), self.wallHolesAt(w+2.5*t, 0, h, 90))], move="right")
 
-        self.moveTo(w + 30, 0)
+        self.moveTo(5, 0)
         self.rectangularWall(w, ht, "efef", move="right")
 
-        self.moveTo(w, 0)
+        self.moveTo(5, 0)
         self.rectangularWall(w, total_length - outside_radius, "efef", move="right")

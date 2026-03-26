@@ -44,11 +44,12 @@ class WallHook(_WallMountedBox):
         outside_radius = radius + ht
         bottom_length = total_length - outside_radius - t
 
-        tw = self.edges["b"].spacing() + total_length - 20
+        tw = self.edges["b"].spacing() + total_length
 
         if self.move(tw, h, move, True):
             return
 
+        self.moveTo(self.edges["b"].margin())
         self.polyline(
             self.edges["b"].startWidth() + bottom_length,
             (90, outside_radius),
@@ -84,7 +85,7 @@ class WallHook(_WallMountedBox):
         radius = hid / 2
         outside_radius = radius + ht
 
-        self.side(move="right")
+        self.side(move="up")
         self.side(move="right mirror")
 
         self.moveTo(self.edges["b"].spacing(), 0)
@@ -92,8 +93,8 @@ class WallHook(_WallMountedBox):
                          r=2*t,
                          callback=[lambda:(self.wallHolesAt(1.5*t, 0, h, 90), self.wallHolesAt(w+2.5*t, 0, h, 90))], move="right")
 
-        self.moveTo(5, 0)
-        self.rectangularWall(w, ht, "efef", move="right")
+        self.moveTo(0, -5)
+        self.rectangularWall(w, ht, "efef", move="left down")
 
-        self.moveTo(5, 0)
-        self.rectangularWall(w, total_length - outside_radius, "efef", move="right")
+        self.moveTo(0, -5)
+        self.rectangularWall(w, total_length - outside_radius, "efef", move="down")

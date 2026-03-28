@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-25 08:59-0400\n"
+"POT-Creation-Date: 2026-03-28 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -737,11 +737,23 @@ msgid ""
 msgstr ""
 
 #. possible choice for format
-msgid "svg"
+msgid "dxf"
 msgstr ""
 
 #. possible choice for format
-msgid "svg_Ponoko"
+msgid "gcode"
+msgstr ""
+
+#. possible choice for format
+msgid "lbrn2"
+msgstr ""
+
+#. possible choice for format
+msgid "pdf"
+msgstr ""
+
+#. possible choice for format
+msgid "plt"
 msgstr ""
 
 #. possible choice for format
@@ -749,7 +761,11 @@ msgid "ps"
 msgstr ""
 
 #. possible choice for format
-msgid "lbrn2"
+msgid "svg"
+msgstr ""
+
+#. possible choice for format
+msgid "svg_Ponoko"
 msgstr ""
 
 #. parameter name
@@ -826,8 +842,8 @@ msgstr ""
 
 #. help for parameter debug
 msgid ""
-"print surrounding boxes for some structures [🛈](https://florianfesti.github."
-"io/boxes/html/usermanual.html#debug)"
+"print surrounding boxes for some structures [🛈](https://"
+"florianfesti.github.io/boxes/html/usermanual.html#debug)"
 msgstr ""
 
 msgid "Settings for Finger Joints"
@@ -1200,8 +1216,7 @@ msgstr ""
 #: boxes/generators/agricolainsert.py
 msgid ""
 "\n"
-"    Agricola Revised Edition game box insert, including some expansions.\n"
-"    "
+"Agricola Revised Edition game box insert, including some expansions.\n"
 msgstr ""
 
 #. long description of AgricolaInsert in markdown
@@ -1212,8 +1227,8 @@ msgid ""
 "with\n"
 "materials around this thickness.\n"
 "\n"
-"This is an insert for the [Agricola Revised Edition](https://boardgamegeek."
-"com/boardgame/200680/agricola-revised-edition)\n"
+"This is an insert for the [Agricola Revised Edition](https://"
+"boardgamegeek.com/boardgame/200680/agricola-revised-edition)\n"
 "board game. It is specifically designed around the [Farmers Of The Moor "
 "expansion](https://boardgamegeek.com/boardgameexpansion/257344/agricola-"
 "farmers-moor),\n"
@@ -1890,7 +1905,7 @@ msgstr ""
 msgid "create holes on the right"
 msgstr ""
 
-msgid " Settings for walls of BeeQueenCage"
+msgid "Settings for walls of BeeQueenCage"
 msgstr ""
 
 #. parameter name for BeeQueenCageWall
@@ -2017,8 +2032,8 @@ msgid ""
 "fit the cage dimensions as otherwise\n"
 "   these sections are taken as margins.\n"
 "\n"
-"![Multiple Bee Queen Transport Boxes](static/samples/BeeQueenTransportBoxes."
-"jpg)\n"
+"![Multiple Bee Queen Transport Boxes](static/samples/"
+"BeeQueenTransportBoxes.jpg)\n"
 "\n"
 "\n"
 "    "
@@ -3299,8 +3314,7 @@ msgstr ""
 #: boxes/generators/coffeecapsulesholder.py
 msgid ""
 "\n"
-"    Coffee capsule holder\n"
-"    "
+"Coffee capsule holder\n"
 msgstr ""
 
 #. long description of CoffeeCapsuleHolder in markdown
@@ -6505,8 +6519,8 @@ msgid ""
 "![HalfBox as hanging shelf](static/samples/HalfBox_Shelf_usage.jpg)\n"
 "\n"
 "* an angle clamping jig:\n"
-"![HalfBox as an angle clamping jig](static/samples/HalfBox_AngleJig_usage."
-"jpg)\n"
+"![HalfBox as an angle clamping jig](static/samples/"
+"HalfBox_AngleJig_usage.jpg)\n"
 "\n"
 "* a bookend:\n"
 "![HalfBox as a bookend](static/samples/HalfBox_Bookend_usage.jpg)\n"
@@ -8685,8 +8699,7 @@ msgstr ""
 #: boxes/generators/paperbox.py
 msgid ""
 "\n"
-"    Box made of paper, with lid.\n"
-"    "
+"Box made of paper, with lid.\n"
 msgstr ""
 
 #. long description of PaperBox in markdown
@@ -8808,8 +8821,7 @@ msgstr ""
 #: boxes/generators/phoneholder.py
 msgid ""
 "\n"
-"    Smartphone desk holder\n"
-"    "
+"Smartphone desk holder\n"
 msgstr ""
 
 #. long description of PhoneHolder in markdown
@@ -8901,9 +8913,8 @@ msgstr ""
 #: boxes/generators/photoframe.py
 msgid ""
 "\n"
-"    3-layer photo frame with a slot at the top to slide matboard/acrylic/"
-"glass over the photo after glue-up.\n"
-"    "
+"3-layer photo frame with a slot at the top to slide matboard/acrylic/glass "
+"over the photo after glue-up.\n"
 msgstr ""
 
 #. long description of PhotoFrame in markdown
@@ -9238,6 +9249,13 @@ msgstr ""
 #. help for parameter modulus
 #: boxes/generators/planetary.py
 msgid "modulus of the theeth in mm"
+msgstr ""
+
+#. help for parameter play
+#: boxes/generators/planetary.py
+msgid ""
+"play at the rotation side of the shaft im mm (use outer minus inner diameter "
+"for ball bearings)"
 msgstr ""
 
 #. name of box generator
@@ -10661,9 +10679,8 @@ msgstr ""
 #: boxes/generators/silverwarebox.py
 msgid ""
 "\n"
-"    Cuttlery stand with carrying grip\n"
-"    using flex for rounded corners\n"
-"    "
+"Cuttlery stand with carrying grip\n"
+"using flex for rounded corners\n"
 msgstr ""
 
 msgid "Silverware Settings"
@@ -11277,6 +11294,87 @@ msgid "bin (d)epth"
 msgstr ""
 
 #. name of box generator
+#: boxes/generators/stevensonscreenbox.py
+msgid "StevensonScreenBox"
+msgstr ""
+
+#. description of StevensonScreenBox
+#: boxes/generators/stevensonscreenbox.py
+msgid "A box with Stevenson Screens front and back."
+msgstr ""
+
+#. long description of StevensonScreenBox in markdown
+#: boxes/generators/stevensonscreenbox.py
+msgid "This box is intended to hold a simple weather station."
+msgstr ""
+
+msgid "StevensonScreenBox Settings"
+msgstr ""
+
+#. parameter name
+#: boxes/generators/stevensonscreenbox.py
+msgid "bottom_width"
+msgstr ""
+
+#. help for parameter bottom_width
+#: boxes/generators/stevensonscreenbox.py
+msgid "Width of the bottom (x direction) (in mm)"
+msgstr ""
+
+#. parameter name
+#: boxes/generators/stevensonscreenbox.py
+msgid "top_slope"
+msgstr ""
+
+#. help for parameter top_slope
+#: boxes/generators/stevensonscreenbox.py
+msgid "The angle of the roof"
+msgstr ""
+
+#. parameter name
+#: boxes/generators/stevensonscreenbox.py
+msgid "roof_top"
+msgstr ""
+
+#. help for parameter roof_top
+#: boxes/generators/stevensonscreenbox.py
+msgid "The attachment style of the roof"
+msgstr ""
+
+#. possible choice for roof_top
+#: boxes/generators/stevensonscreenbox.py
+msgid "finger joints"
+msgstr ""
+
+#. possible choice for roof_top
+#: boxes/generators/stevensonscreenbox.py
+msgid "glued"
+msgstr ""
+
+msgid "Settings for a Stevenson Screen."
+msgstr ""
+
+#. help for parameter angle
+#: boxes/generators/stevensonscreenbox.py
+msgid "The angle the slats make with horizontal"
+msgstr ""
+
+#. parameter name for slat
+#: boxes/generators/stevensonscreenbox.py
+msgid "overlap"
+msgstr ""
+
+#. help for parameter overlap
+#: boxes/generators/stevensonscreenbox.py
+msgid "The fraction of each slat that overlaps"
+msgstr ""
+
+#. help for parameter depth
+#: boxes/generators/stevensonscreenbox.py
+msgid "The size of the slats, in multiples of thickness"
+msgstr ""
+
+#. name of box generator
 #: boxes/generators/storagerack.py
 msgid "StorageRack"
 msgstr ""
@@ -11716,11 +11814,6 @@ msgstr ""
 
 #. possible choice for vertical_edges
 #: boxes/generators/universalbox.py
-msgid "finger joints"
-msgstr ""
-
-#. possible choice for vertical_edges
-#: boxes/generators/universalbox.py
 msgid "finger holes"
 msgstr ""
 
@@ -12034,39 +12127,6 @@ msgid "WallDrillBox Settings"
 msgstr ""
 
 #. name of box generator
-#: boxes/generators/walldrillholder.py
-msgid "WallDrill"
-msgstr ""
-
-#. description of WallDrill
-#: boxes/generators/walldrillholder.py
-msgid "Holds a drill to a wall"
-msgstr ""
-
-msgid "WallDrill Settings"
-msgstr ""
-
-#. help for parameter width
-#: boxes/generators/walldrillholder.py
-msgid "width of the back panel"
-msgstr ""
-
-#. parameter name
-#: boxes/generators/walldrillholder.py
-msgid "hook_inside_diameter"
-msgstr ""
-
-#. help for parameter hook_inside_diameter
-#: boxes/generators/walldrillholder.py
-msgid "Hook's inside diameter"
-msgstr ""
-
-#. help for parameter hook_thickness
-#: boxes/generators/walldrillholder.py
-msgid "Hook's thickness"
-msgstr ""
-
-#. name of box generator
 #: boxes/generators/walledges.py
 msgid "WallEdges"
 msgstr ""
@@ -12090,6 +12150,26 @@ msgid "Hook to install on a wall"
 msgstr ""
 
 msgid "WallHook Settings"
+msgstr ""
+
+#. help for parameter width
+#: boxes/generators/wallhook.py
+msgid "width of the back panel"
+msgstr ""
+
+#. parameter name
+#: boxes/generators/wallhook.py
+msgid "hook_inside_diameter"
+msgstr ""
+
+#. help for parameter hook_inside_diameter
+#: boxes/generators/wallhook.py
+msgid "Hook's inside diameter"
+msgstr ""
+
+#. help for parameter hook_thickness
+#: boxes/generators/wallhook.py
+msgid "Hook's thickness"
 msgstr ""
 
 #. name of box generator
@@ -12705,11 +12785,68 @@ msgstr ""
 msgid "Add a fourth piece to make a U-Beam with a flange"
 msgstr ""
 
+#: scripts/boxesserver:238
+#, python-format
+msgid "%s - Boxes"
+msgstr ""
+
+#: scripts/boxesserver:248 scripts/boxesserver:339 scripts/boxesserver:450
+#: scripts/boxesserver:585
+msgid "Boxes.py"
+msgstr ""
+
+#: scripts/boxesserver:287
+msgid "Generate"
+msgstr ""
+
+#: scripts/boxesserver:288
+msgid "Download"
+msgstr ""
+
+#: scripts/boxesserver:289
+msgid "Save to URL"
+msgstr ""
+
+#: scripts/boxesserver:290
+msgid "QR Code"
+msgstr ""
+
 #: scripts/boxesserver:299
 msgid ""
 "There is no image yet. Please donate an image of your project on <a "
 "href=&quot;https://github.com/florianfesti/boxes/issues/628&quot; "
 "target=&quot;_blank&quot; rel=&quot;noopener&quot;>GitHub</a>!"
+msgstr ""
+
+#: scripts/boxesserver:313
+msgid "Zoom: "
+msgstr ""
+
+#: scripts/boxesserver:316
+msgid "Reset"
+msgstr ""
+
+#: scripts/boxesserver:350 scripts/boxesserver:585 scripts/boxesserver:596
+msgid "Gallery"
+msgstr ""
+
+#: scripts/boxesserver:351 scripts/boxesserver:597
+msgid "Menu"
+msgstr ""
+
+#: scripts/boxesserver:451
+msgid "Create boxes and more with a laser cutter!"
+msgstr ""
+
+#: scripts/boxesserver:453
+msgid ""
+"\n"
+"        <a href=\"https://hackaday.io/project/10649-boxespy\">Boxes.py</a> "
+"is an <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">Open Source</"
+"a> box generator written in <a href=\"https://www.python.org/\">Python</a>. "
+"It features both finished parametrized generators as well as a Python API "
+"for writing your own. It features finger and (flat) dovetail joints, flex "
+"cuts, holes and slots for screws, hinges, gears, pulleys and much more."
 msgstr ""
 
 #: scripts/boxesserver:477
@@ -12736,6 +12873,15 @@ msgstr ""
 msgid "Give Back"
 msgstr ""
 
-#: scripts/boxesserver:518
+#: scripts/boxesserver:488
+msgid "Preview"
+msgstr ""
+
+#: scripts/boxesserver:499
+#, python-format
+msgid "Error generating %s"
+msgstr ""
+
+#: scripts/boxesserver:504 scripts/boxesserver:518
 msgid "An error occurred!"
 msgstr ""
